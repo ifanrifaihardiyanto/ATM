@@ -34,7 +34,8 @@ public class Frame4 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         ambil = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        awal = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         akhir = new javax.swing.JLabel();
@@ -65,10 +66,12 @@ public class Frame4 extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SALDO AWAL", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
         jPanel2.setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Rp 50000");
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(30, 30, 310, 20);
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setText("Rp");
+        jPanel2.add(jLabel5);
+        jLabel5.setBounds(26, 22, 30, 20);
+        jPanel2.add(awal);
+        awal.setBounds(60, 20, 280, 30);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(20, 140, 360, 70);
@@ -144,7 +147,7 @@ public class Frame4 extends javax.swing.JFrame {
             else
             {
                  int h1 = Integer.parseInt(ambil.getText());
-        int q2 = Integer.parseInt(akhir.getText());
+        int q2 = Integer.parseInt(awal.getText());
         int x = q2-h1;   
         akhir.setText(String.valueOf(x));  
             }
@@ -189,12 +192,13 @@ public class Frame4 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel akhir;
     private javax.swing.JTextField ambil;
+    private javax.swing.JTextField awal;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
